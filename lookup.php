@@ -59,3 +59,5 @@ function ipAddress()
 
 $ipAddr = ipAddress();
 $lookupIP = getInfo($ipAddr);
+
+?>
