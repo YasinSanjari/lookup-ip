@@ -6,7 +6,7 @@ function getInfo($ip = null)
     if (is_null($ip)) {
         $ip = ipAddress();
     }
-    $ch = curl_init('https://whois.configserver.pro/api/v1/lookup/ip?ip=' . $ip);
+    $ch = curl_init('https://lookup.configserver.pro/api/v1/lookup/ip?ip=' . $ip);
     curl_setopt($ch, CURLOPT_HTTPHEADER, array(
         'apiKey: TOKEN'
     ));
